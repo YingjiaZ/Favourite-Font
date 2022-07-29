@@ -11,6 +11,7 @@ See deployed web page here:
 <li> Type in the 'Type something' input bar to change the display sentence.
 <li> Change the font size by selecting one.
 <li> Click the reset button to reset to the original state.
+<li> Click the arrow at the button right corner to go back to top.
 
 
 ## Scripts
