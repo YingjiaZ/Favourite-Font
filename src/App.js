@@ -16,20 +16,20 @@ function App() {
     return (
         <>
             <MinorNav />
-            {/* <div className='MinorNav-container'>
+            <div>
                 <Routes>
                     <Route path='/about' element={<About />} />
                     <Route path='/articles' element={<Articles />} />
                     <Route path='/catalog' element={<Catalog />} />
                     <Route path='/featured' element={<Featured />} />
-                    <Route path='/' element={<div><NavBar />
+                    <Route path='/' element={<div>  <NavBar />
                                                     <Footer />
                                                     <BackToTop /></div>} />
                 </Routes>
-            </div> */}
-            <NavBar />
+            </div>
+            {/* <NavBar />
             <Footer />
-            <BackToTop />
+            <BackToTop /> */}
         </>
     );
 }

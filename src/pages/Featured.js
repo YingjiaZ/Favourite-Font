@@ -1,5 +1,5 @@
 export default function Featured() {
     return (
-        <h1>Featured</h1>
+        <h1 className="pages">Featured</h1>
     )
 }

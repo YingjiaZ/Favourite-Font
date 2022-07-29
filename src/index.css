@@ -5,6 +5,7 @@
     background-color: white;
     color: grey;
     display: flex;
+    flex-wrap: wrap; /* display two lines when window shrinks */
     justify-content: space-between; /* push items to left & right side of the page */
     align-items: center;
     padding: 0 3rem;  /* top, right, bottom, left */
@@ -33,6 +34,11 @@
     text-decoration: none; /* remove underline */
 }
 
+.pages {
+    margin: 1rem;
+    text-align: center;
+}
+
 .MinorNav-Links:hover {
     color: rgb(179, 176, 176);
 }
@@ -47,7 +53,7 @@
     border-radius: 30px;
     border: 1px solid grey;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;/* space-between;*/
     gap: 5px;
 }
 
@@ -65,10 +71,12 @@
     background-repeat: no-repeat;
     outline: none;
     border: none;
+    padding-right: 1rem;
 }
 
 .font-selector {
     border: none;
+    padding-right: 3rem;
 }
 
 .cards-container {
@@ -93,6 +101,7 @@
 
 .content {
     padding-left: 5px;
+    overflow-wrap: break-word; /* when input is too long, wrap around */
 }
 
 .footer {

@@ -1,19 +1,19 @@
 import React from "react";
 import { MinorNavItems } from "./MinorNavItems";
+import { Link } from 'react-router-dom'
 
 class MinorNav extends React.Component {
     render() {
         return (
             <nav className="MinorNavItems">
-                <h1><a href="/" className="MinorNav-logo">GoogleFonts</a></h1>
+                <h1><Link className="MinorNav-logo" to={"/"}>GoogleFonts</Link></h1>
                 <ul>
                     {MinorNavItems.map(item => {
                         return (
                             <li key={item.title}>
-                                {/* use nav link normally */}
-                                <a className={item.cName} href={item.url}>
+                                <Link className={item.cName} to={item.url}>
                                     {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}

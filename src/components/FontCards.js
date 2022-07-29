@@ -1,13 +1,6 @@
 import React from "react";
-import raw from "../api.txt"
 
-var url = '';
-fetch(raw)
-  .then(r => r.text())
-  .then(text => {
-    url = text;
-    // console.log('text decoded:', text);
-});
+const url = 'YOUR URL';
 
 class FontCards extends React.Component {
     constructor(props){
@@ -19,10 +12,15 @@ class FontCards extends React.Component {
     // fetch json file using google fonts developer API
     componentDidMount()
     {
-        fetch(url)
+        fetch(url, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
         .then((response) => response.json())
         .then((findresponse)=>{
-            console.log(findresponse.items)
+            // console.log(findresponse.items)
             this.setState({
                 fonts:findresponse.items,
             })
@@ -41,10 +39,8 @@ class FontCards extends React.Component {
                     return (
                         <div className="card" key={item.family}>
                             <link rel={"stylesheet"} href={"https://fonts.googleapis.com/css?family=" + item.family}></link>
-                            {/* <article > */}
                                 <div className="font-title">{item.family}</div>
                                 <p className="content" style={{fontFamily: item.family, fontSize: this.props.fontSize}}>{this.props.input}</p>
-                            {/* </article> */}
                         </div>
                     )
                 })}

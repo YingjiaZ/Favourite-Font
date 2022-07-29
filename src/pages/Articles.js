@@ -1,5 +1,5 @@
 export default function Articles() {
     return (
-        <h1>Articles</h1>
+        <h1 className="pages">Articles</h1>
     )
 }
