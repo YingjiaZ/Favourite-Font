@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Favourite-Font/static/css/main.1e2a11e9.css",
+    "main.js": "/Favourite-Font/static/js/main.9faf5516.js",
+    "static/media/reset2.png": "/Favourite-Font/static/media/reset2.1f7c048ab5b5d3148082.png",
+    "static/media/arrow.png": "/Favourite-Font/static/media/arrow.22ff0229af36ce82ba5f.png",
+    "index.html": "/Favourite-Font/index.html",
+    "main.1e2a11e9.css.map": "/Favourite-Font/static/css/main.1e2a11e9.css.map",
+    "main.9faf5516.js.map": "/Favourite-Font/static/js/main.9faf5516.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e2a11e9.css",
+    "static/js/main.9faf5516.js"
+  ]
+}
