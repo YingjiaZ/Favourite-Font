@@ -4,6 +4,7 @@ The web page displays all the google fonts sorted by popularity. (See Google Fon
 
 See deployed web page here:
 ```https://yingjiaz.github.io/Favourite-Font/```
+(There may be a delay when loading fonts)
 
 ## Basic Functionality
 <li> Navigate to different pages on the Nav Bar. Click the logo to visit the homepage.
