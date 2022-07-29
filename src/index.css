@@ -1,0 +1,126 @@
+.MinorNavItems {
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;  /* nav bar underline */
+    margin: 0;
+    background-color: white;
+    color: grey;
+    display: flex;
+    justify-content: space-between; /* push items to left & right side of the page */
+    align-items: center;
+    padding: 0 3rem;  /* top, right, bottom, left */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.MinorNavItems ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;  /* list remove dot in front */
+    display: flex;  /* from vertical to horizontal */
+    gap: 1rem;
+}
+
+.MinorNav-logo {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.MinorNav-logo:hover {
+    color: rgb(179, 176, 176);
+}
+
+.MinorNav-Links {
+    color: inherit; /* takes the value from parent */
+    text-decoration: none; /* remove underline */
+}
+
+.MinorNav-Links:hover {
+    color: rgb(179, 176, 176);
+}
+
+.NavBar-container {
+    padding: 1rem 5rem 1rem 3rem; 
+}
+
+.NavBar {
+    padding: 3px 1rem 3px 1rem; 
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.NavBar input {
+    border: 0;
+    border-right: 1px solid gray;
+    width: 100%;
+}
+
+.reset-button {
+    background-image: url('./assets/reset2.png');
+    background-color: transparent;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+}
+
+.font-selector {
+    border: none;
+}
+
+.cards-container {
+    padding: 0 4rem 0 4rem;  /* top, right, bottom, left */
+    display: grid;
+    /*grid-template-columns: repeat(4, 1fr); /*repeat(auto-fill);*/
+    grid-template-columns: repeat(auto-fill, minmax(240px, auto));
+    grid-auto-rows: minmax(220px, auto);
+    row-gap: 20px;
+    column-gap: 30px; /* row-gap and column-gap */ 
+    /* justify-content: center; */
+}
+
+.card {
+    border-top: 1px solid black;
+}
+
+.font-title {
+    font-weight: bold;
+    padding: 5px 0 0 5px; /* top, right, bottom, left */
+}
+
+.content {
+    padding-left: 5px;
+}
+
+.footer {
+    /* margin-top: 1rem;
+    padding: 1rem; */
+    background-color: transparent;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+.back-to-top button {
+    background-image: url('./assets/arrow.png');
+    background-color: lightgray;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 25px;
+    width: 25px;
+}
