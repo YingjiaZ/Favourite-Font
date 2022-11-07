@@ -2,6 +2,9 @@
 
 The web page displays all the google fonts sorted by popularity. (See Google Fonts API and the Google Fonts Developer API)
 
+Follow the link to navigate:
+https://yingjiaz.github.io/Favourite-Font/
+
 ## Basic Functionality
 <li> Navigate to different pages on the Nav Bar. Click the logo to visit the homepage.
 <li> Type in the 'Search font' input bar to search fonts. The font cards change as the user types.
